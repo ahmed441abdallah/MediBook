@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource/outfit/300.css";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/dm-serif-display/400.css";
+
+/* ═══════════════════════════════════════════════════
+   MEDIBOOK — Premium Minimalist Design System
+   ═══════════════════════════════════════════════════ */
+
+@theme inline {
+  --font-sans: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "DM Serif Display", "Georgia", serif;
+}
+
+:root {
+  /* Palette — monochromatic + deep emerald accent */
+  --color-bg: #fafaf8;
+  --color-bg-pure: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-soft: #555555;
+  --color-text-muted: #999999;
+  --color-border: #e6e4e0;
+  --color-border-light: #f0eeed;
+  --color-accent: #1b4332;
+  --color-accent-hover: #2d6a4f;
+  --color-accent-light: #d8f3dc;
+}
+
+/* ── Base ── */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* ── Typography utilities ── */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.heading-editorial {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+/* ── Subtle selection ── */
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* ── Thin elegant scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+/* ── Animations ── */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Utility: thin horizontal rule ── */
+.rule {
+  height: 1px;
+  background: var(--color-border);
+  border: none;
+}
