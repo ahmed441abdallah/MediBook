@@ -13,7 +13,6 @@ import {
 import PaginationUi from "@/components/common/Pagination";
 import { usePagination } from "@/hooks/usePagination";
 
-
 // ─── AllDoctors page ─────────────────────────────────────────────────────────
 
 export const AllDoctors = () => {

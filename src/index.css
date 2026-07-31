@@ -6,9 +6,6 @@
 @import "@fontsource/outfit/600.css";
 @import "@fontsource/dm-serif-display/400.css";
 
-/* ═══════════════════════════════════════════════════
-   MEDIBOOK — Premium Minimalist Design System
-   ═══════════════════════════════════════════════════ */
 
 @theme inline {
   --font-sans: "Outfit", "Helvetica Neue", Arial, sans-serif;
@@ -16,7 +13,6 @@
 }
 
 :root {
-  /* Palette — monochromatic + deep emerald accent */
   --color-bg: #fafaf8;
   --color-bg-pure: #ffffff;
   --color-text: #1a1a1a;
@@ -29,7 +25,6 @@
   --color-accent-light: #d8f3dc;
 }
 
-/* ── Base ── */
 
 html {
   scroll-behavior: smooth;
